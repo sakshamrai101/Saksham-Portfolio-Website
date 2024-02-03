@@ -338,7 +338,7 @@ section {
   text-align: initial;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 2.5rem;
+  gap: 1.5rem;
   justify-content: space-around;
 }
 
@@ -366,8 +366,8 @@ article .icon {
 
 .project-img {
   border-radius: 2rem;
-  width: 90%;
-  height: 90%;
+  width: 50%;
+  height: 50%;
 }
 
 .project-title {
@@ -429,4 +429,58 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+.about-me-container {
+  /* Aesthetic and readable font */
+  color: #333;
+  /* Dark grey for text, easy on the eyes */
+  max-width: 800px;
+  /* Optimal line length for readability */
+  margin: 0 auto;
+  /* Center the container */
+  padding: 20px;
+  /* Padding around the text */
+}
+
+.about-me-container ul {
+  list-style-type: none;
+  /* No default bullets */
+  padding: 0;
+}
+
+.about-me-container ul li {
+  padding: 10px 0;
+  /* Spacing between items */
+  position: relative;
+  /* For custom bullet */
+}
+
+.about-me-container ul li:before {
+  content: '•';
+  /* Simple bullet point */
+  color: #007bff;
+  /* Highlight color for the bullet */
+  font-size: 20px;
+  /* Slightly larger bullet */
+  position: absolute;
+  /* Positioning the bullet */
+  left: -25px;
+  /* Align bullets outside the text */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.about-me-container ul li strong {
+  color: #000;
+  /* Black for emphasis */
+  font-weight: 600;
+  /* Slightly bolder */
+}
+.project-description {
+  margin: 10px 0;
+  font-size: 0.9rem;
+  /* Adjust as needed */
+  color: rgb(85, 85, 85);
+  /* Or any color that fits your design */
 }
