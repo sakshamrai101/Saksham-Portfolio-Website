@@ -268,9 +268,12 @@ section {
 }
 
 .about-containers {
-  gap: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 200px;
+    /* Adjust the gap to your liking */
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 .about-details-container {
@@ -295,7 +298,7 @@ section {
 
 .details-container {
   padding: 1.5rem;
-  flex: 1;
+  grid: 1;
   background: white;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
@@ -483,4 +486,30 @@ footer p {
   /* Adjust as needed */
   color: rgb(85, 85, 85);
   /* Or any color that fits your design */
+}
+
+/* Projects Section Grid Layout */
+#projects .about-containers {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* Creates four columns */
+  gap: 20px;
+  /* Adjust the gap between projects as needed */
+  padding: 20px;
+  /* Adds some padding around the grid */
+}
+
+/* Responsive Design: Adjust columns for smaller screens */
+@media screen and (max-width: 1200px) {
+  #projects .about-containers {
+    grid-template-columns: repeat(2, 1fr);
+    /* Switches to two columns for smaller screens */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #projects .about-containers {
+    grid-template-columns: 1fr;
+    /* Switches to a single column for very small screens */
+  }
 }
