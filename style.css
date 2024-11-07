@@ -277,7 +277,7 @@ section {
 }
 
 .about-details-container {
-  justify-content: center;
+  justify-content: left;
   flex-direction: column;
 }
 
@@ -297,13 +297,18 @@ section {
 }
 
 .details-container {
-  padding: 1.5rem;
+  padding: 2rem;
   grid: 1;
+  margin-bottom: 1.5rem;
   background: white;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
-  text-align: center;
+  text-align: left;
+}
+
+.experience {
+  line-height: 2.5;
 }
 
 .section-container {
